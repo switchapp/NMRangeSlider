@@ -218,6 +218,11 @@ NSUInteger DeviceSystemMajorVersion() {
     [self setLowerValue:NAN upperValue:upperValue animated:animated];
 }
 
+- (void)setStepValue:(float)stepValue {
+    _stepValue = stepValue;
+    _stepValueInternal = stepValue;
+}
+
 - (void) setLowerHandleHidden:(BOOL)lowerHandleHidden
 {
     _lowerHandleHidden = lowerHandleHidden;
